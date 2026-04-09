@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="dta.png" />
+
+  <!-- title -->
+  <title>DEATH TO AGENCY</title>
+
+  <!-- meta description -->
+  <meta name="description" content="Death to agency. No pitches, no decks, no bullshit. Limited projects per year. Monterrey MX." />
+
+  <!-- Open Graph (Facebook, WhatsApp, etc) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DEATH TO AGENCY" />
+  <meta property="og:description" content="No pitches, no decks, no bullshit. Limited projects per year." />
+  <meta property="og:image" content="preview.png" />
+  <meta property="og:url" content="https://deathtoagency.com" />
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+      --page-padding-desktop: 28px;
+      --page-padding-mobile: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .page {
+      min-height: 100vh;
+      padding: var(--page-padding-desktop);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      opacity: 0;
+      transform: translateY(16px);
+      animation: fadeInPage 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .top {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 48px;
+    }
+
+    .mark {
+      display: block;
+      width: min(170px, 14vw);
+      min-width: 120px;
+      height: auto;
+      opacity: 0;
+      transform: translateY(-10px);
+      animation: fadeInSoft 1s cubic-bezier(0.22, 1, 0.36, 1) 0.18s forwards;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .bottom {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 0;
+    }
+
+    .footer-copy {
+      margin: 0;
+      max-width: 760px;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--text);
+      opacity: 0;
+      transform: translateY(12px);
+      animation: fadeInSoft 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.32s forwards;
+    }
+
+    @keyframes fadeInPage {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInSoft {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 767px) {
+      .page {
+        padding: var(--page-padding-mobile);
+      }
+
+      .top {
+        padding-top: 52px;
+      }
+
+      .mark {
+        width: 54vw;
+        max-width: 205px;
+        min-width: 145px;
+      }
+
+      .footer-copy {
+        max-width: 300px;
+      }
+    }
+  .cta {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.25s ease;
+    }
+
+    .cta:hover {
+      border-bottom-color: var(--text);
+    }
+
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="top">
+      <img class="mark" src="dta.png" alt="Death to agency" />
+    </div>
+
+    <div class="bottom">
+      <p class="footer-copy">
+        Death to agency © no pitches no decks no bullshit<br />
+        Monterrey MX / Wherever needed Limited projects per year if it feels right you already know
+      <br /><br />
+        <a class="cta" href="https://www.instagram.com/deathtoagency/" target="_blank" rel="noopener">Apply for access</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
